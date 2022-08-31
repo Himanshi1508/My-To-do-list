@@ -1,0 +1,123 @@
+/*
+light-green: #F6F7D7
+Blue: #3EC1D3
+Orange: #FF9A00
+Red: #FF165D
+*/
+
+html {
+    padding: 10%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 500px;
+    min-height: 100px;
+    font-size: 10px;
+    font-family: 'oswald';
+    background-color: #050505;
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg);
+    color: #1a2124;
+    padding: 0 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0;
+    font-weight: bold;
+    color: azure;
+}
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    color: rgb(8, 10, 10);
+}
+
+.task-input {
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: #ebf1f1e3;
+    font-size: 1rem;
+}
+
+.tasks-list-div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.task-div {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(128, 115, 115);
+    margin: .7rem 0rem;
+}
+
+.task-div:not(:last-child) {
+    padding-bottom: 1.5rem;
+    border-bottom : solid 1px rgb(84, 142, 175);
+}
+
+.task-text {
+    justify-self: center;
+    max-width: 20rem;
+    word-wrap: break-word;
+    font-size: 2rem;
+    vertical-align: middle;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #4f728180;
+    color: whitesmoke;
+}
+
+.task-controls {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.task-clear-div {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 1.5rem 0;
+    color: whitesmoke;
+}
+
+.task-btn {
+    min-width: 4rem;
+    border: none;
+    outline: none;
+    padding: .7rem .9rem;
+    background-color: #4196a5;
+}
+
+.task-btn:not(:last-child) {
+    border-right : solid 1px rgb(85, 161, 196);
+}
+
+.task-btn:hover, .task-btn:focus {
+    background-color: #e069e4;
+}
+
+.task-input, .task-btn-edit {
+    border-radius: 7px 0 0 7px;
+}
+
+.task-btn-submit, .task-btn-do {
+    border-radius: 0 7px 7px 0;
+}
+
+.task-btn-clear {
+    border-radius: 7px;
+}
